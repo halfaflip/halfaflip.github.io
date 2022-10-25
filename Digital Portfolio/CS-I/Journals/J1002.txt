@@ -1,0 +1,50 @@
+Name: Jane Williams
+Journal: J1002
+Date: 17-Aug-2022
+
+I received assistance from: NO ONE
+I assisted: NO ONE
+
+1.1:
+. Name at least two other services that you personally use which are implemented using a Client/Server Model
+Two services that use a Client Server model are Gmail and iMessage
+
+2.1:
+Yes I believe it’s important because when renaming directories there are many common names to choose from; for example, Photos, Documents, and Videos are very common.
+
+3.1:
+The home directory has a special symbol to represent it because it makes life easier for the programmer. They can easily distinguish it from other directories.
+
+4.1:
+The prompt changed because the typing pwd indicates that we’re now in the Merlin directory.
+
+5.1 and 5.
+Each time you pressed the up arrow or down key, it would reiterate the commands you typed prior.
+
+6.1:
+. It wasn’t printed to the screen as before because we sent that text to the file. Only by executing that file using the cat command will the text be outputted to the shell.
+7.1
+The ls command shows the directory hierarchy in quick, efficient manner. The tree command shows an actual structure.
+7.2:
+We choose the command based off what we want to achieve. If we want to see a full overview of the directories and all their relationships then we’ll use tree.
+8.1:
+The argument to sleep specifies how many seconds it will take for a command to return.
+8.2
+:I can prove my hypothesis by typing sleep 10 and determining if it takes 10 seconds to return.
+9.1
+The behavior is different what I expected because instead of 10 seconds, it took a minute for the command to return
+9.2
+Running a job in the background means allowing a process to run without sending any messages to the main screen.
+10.1
+When I execute the jobs command I noticed that nothing shows up
+10.2
+The reasons for these observations is that doing the job command causes there to be a timer. The command will not return after the specified number of time is over.
+
+What did I learn? What is the "big idea"?
+I learned how to navigate through tabby using basic commands such as creating directories and files, using commands such and tree and ls to view those categories, and navigating through directories using cd or prompting files using cat. The big idea of this experience was to become accustomed to Tabby mechanics and increase one's skillset slowly
+What challenges did I encounter?
+I encountered challenges such as figuring out how to fix keybinds because I was unable to paste. ADditionally, I had to become familiar with a bunch of shortcuts by repeating them over and over again
+How could this experience be improved?
+I can't think of anything to improve this experience because it was straight forward and great for beginners.
+Free Reflection: How has what I've learned affected my thinking
+This experience affected my thinking because it made me realize that instead of typing everythign out and doing stuff the hard way, one can use shortcuts. This promotes increased productivity and saves alot of time 

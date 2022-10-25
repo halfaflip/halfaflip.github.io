@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* this is how to write a comment
+/* Padding basically just specifies how much space is around the element's content inside a border if there is one.
+/*Margin is like when you're editing in photoshop and you change the border which makes the area around the text shrink
+/*The purpose of box sizing is to make sure that padding isn't compensated forw while calculating the height and width an element. Because if it 
+}*/
+html, body{
+    background-color:#251D29;
+    height: 100%;
+    background-size: cover;
+}
+body {
+    margin: 0;
+    background-color: #6255689;
+}
+.card {
+    margin: auto;
+    padding: 1rem;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.bg-blur {
+    background-color: transparent;
+}
+
+.bg-blur::before {
+    content: '';
+    background-image: var(--bg-image);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    filter: blur(30px);
+    z-index: -1;
+}
+.hero{
+    height: 100vh; /*vh basically just means a percentage of the brosers viewpoint*/
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500
+}
+.container{
+    display:flex;
+    color: white;
+    margin-top: 60px;
+}    
+.flex-child{
+    flex: 1;
+    border: 50px white;
+}
+.flex-child:first-child{
+    color: white;
+    margin-right: 35px;
+}
+nav{
+    display: flex; /*this defines that this will be a flexbox*/
+    align-items: center; /*in flexbox, there's a cross axis which is perpendicular to the main axis. In this case the cross axics is horizontal. So this defines that items within the flex box will be centered in the cross axis.*/
+    justify-content: space-between; /*this defines alignment along the axis, the items are evenly distributed in the line with spaces in between */
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+.logo{
+    color: white;
+    font-size: 29px;
+    text-align: left;
+    font-family: 'Josefin Sans';
+    
+}
+span{ /*The span element in html marks part of a text. In this I marked Mateo with span*/
+    color: #ea1538;
+    /* padding-left: 20px; This would put a margin around the text, invisible space*/
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+    font-size: 27px;
+    text-transform: all-uppercase;
+}
+nav ul li{
+    list-style-type: none; /*This specifies the style of a list*/
+    display: inline-block;
+    padding: 10px 22px; /*if you put the padding values next to each other it follows the order top, right, bottom left so in this case its 10px top and 22 px right*/
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{ /*This makes it so when you hover over the element it does something*/
+    transition: .4s;
+    color: #ea1538;
+    background-color: rgba(107, 64, 138, 0.26);
+    height:13px;
+}
+a:hover{
+    transition: .4s;
+    color: #ea1538;
+    background-color: rgba(107, 64, 138, 0.26);
+    height: 30px;
+}
+.main{
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.mis{
+    position: relative;
+    top: 12%;
+    left: 2%;
+    display: inline;
+}
+    
+/*h1 {
+    color: white;
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 8px 2px black; 
+}*/
+h1 {
+    font-size: 6rem;
+    height:80vh;
+    line-height: 29vh;
+    color: #fcedd8;
+    font-family: 'Niconne', cursive;
+    font-weight: 700;
+    text-shadow: 5px 5px 0px #eb452b,
+    10px 10px 0px #efa032,
+    15px 15px 0px #46b59b,
+    20px 20px 0px #017e7f,
+    25px 25px 0px #052939,
+    28px 28px 0px #c11a2b,
+    35px 35px 0px #c11a2b,
+    40px 40px 0px #c11a2b,
+    45px 45px 0px #c11a2b;
+    display: inline;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    
+}
+h2{
+    color: white;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    letterspacing: 9px;
+    marginbottom: 14px;
+    text-transform: uppercase;
+    text-shadow: 3px 2px black;
+}
+h4{
+    color white;
+	font-size: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    letterspacing: 3px;
+    marginbottom: 14px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px black;
+}
+p{
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 23px;
+h3{
+    color: white;
+    font-size: 9px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    letterspacing: 3px;
+    marginbottom: 14px;
+}
+p{
+    margin-bottom: 25px;
+    color: white;
+    font-size: 1px;
+    line-height: 1.4;
+    font-weight: 1000;
+}
+.hover {
+    color: #0000;
+    background:
+	linear-gradient(90deg,#1095c1 50%,#000 0)
+	var(--_p,100%)/200% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: .4s;
+}
+.hover:hover {
+    --_p: 0%;
+}

@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+/* this is how to write a comment
+/* Padding basically just specifies how much space is around the element's content inside a border if there is one.
+/*Margin is like when you're editing in photoshop and you change the border which makes the area around the text shrink
+/*The purpose of box sizing is to make sure that padding isn't compensated forw while calculating the height and width an element. Because if it is then the size will appear larger then the height and width that was specified*/
+.hero{
+    height: 100vh; /*vh basically just means a percentage of the brosers viewpoint*/
+    width: 100%;
+    background-image: url('https://wallpaperaccess.com/full/1092732.jpg');
+    background-size: cover; /*cover is one of the values you can use for background size and it basically scales the image (preserving its ratio) to the smallest size so that it can fit the container. Other values are auto, contain (scales the image as large as possible without cropping or stretching the image. This will result in image tiling unless the background repeat property is set to no repeat)*/
+    background-position: center;
+}
+nav{
+    display: flex; /*this defines that this will be a flexbox*/
+    align-items: center; /*in flexbox, there's a cross axis which is perpendicular to the main axis. In this case the cross axics is horizontal. So this defines that items within the flex box will be centered in the cross axis.*/
+    justify-content: space-between; /*this defines alignment along the axis, the items are evenly distributed in the line with spaces in between */
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: white;
+    font-size: 29px;
+}
+span{ /*The span element in html marks part of a text. In this I marked Mateo with span*/
+    color: #ea1538;
+    /* padding-left: 20px; This would put a margin around the text, invisible space*/
+}
+nav ul li{
+    list-style-type: none; /*This specifies the style of a list*/
+    display: inline-block;
+    padding: 10px 22px; /*if you put the padding values next to each other it follows the order top, right, bottom left so in this case its 10px top and 22 px right*/
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{ /*This makes it so when you hover over the element it does something*/
+    transition: .4s;
+    color: #ea1538;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+h1{
+    color: white;
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+p{
+    margin-bottom: 25px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 1000;
+}
